@@ -1,0 +1,28 @@
+{
+  "name": "reinbox",
+  "version": "0.1.0",
+  "description": "Declarative topic based notification UI manager for React (Native)",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Leko/reinbox.git"
+  },
+  "keywords": [
+    "react",
+    "notification",
+    "ui",
+    "declarative"
+  ],
+  "author": "Leko <leko.noor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Leko/reinbox/issues"
+  },
+  "homepage": "https://github.com/Leko/reinbox#readme",
+  "devDependencies": {
+    "lerna": "^3.4.0"
+  }
+}
