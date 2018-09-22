@@ -13,7 +13,6 @@
   "license": "MIT",
   "main": "./dist/index.js",
   "directories": {
-    "lib": "lib",
     "test": "__tests__"
   },
   "files": [
@@ -24,6 +23,7 @@
     "url": "git+ssh://git@github.com/Leko/reinbox.git"
   },
   "scripts": {
+    "prepare": "babel src --extensions '.ts,.tsx' --out-dir dist",
     "test": "jest"
   },
   "bugs": {
@@ -31,6 +31,10 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.1.0",
     "@types/jest": "^23.3.2",
     "jest": "^23.6.0",
     "ts-jest": "^23.10.1",
