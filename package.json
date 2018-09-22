@@ -4,7 +4,7 @@
   "description": "Declarative topic based notification UI manager for React (Native)",
   "main": "./dist/index.js",
   "scripts": {
-    "test": "ava"
+    "test": "lerna run test"
   },
   "repository": {
     "type": "git",

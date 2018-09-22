@@ -17,16 +17,24 @@
     "test": "__tests__"
   },
   "files": [
-    "lib"
+    "dist"
   ],
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/Leko/reinbox.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "jest"
   },
   "bugs": {
     "url": "https://github.com/Leko/reinbox/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^23.3.2",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.1",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.3"
   }
 }
