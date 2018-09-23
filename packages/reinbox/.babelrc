@@ -1,3 +1,12 @@
 {
-  "presets": ["@babel/preset-typescript", "@babel/preset-react"]
+  "presets": [
+    [
+      "@babel/preset-typescript",
+      {
+        "exclude": ["transform-regenerator"]
+      }
+    ],
+    "@babel/preset-typescript",
+    "@babel/preset-react"
+  ]
 }
