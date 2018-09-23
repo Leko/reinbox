@@ -18,7 +18,7 @@ jobs:
             - v{{ .Environment.CIRCLECI_CACHE_VERSION }}-dependencies-{{ checksum "package-lock.json" }}
             - v{{ .Environment.CIRCLECI_CACHE_VERSION }}-dependencies-
       - run: npm install
-      - run: npm run bootstrap
+      - run: npx run bootstrap
       - save_cache:
           paths:
             - node_modules
