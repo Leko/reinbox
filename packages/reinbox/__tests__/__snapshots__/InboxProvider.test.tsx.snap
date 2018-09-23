@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot with no messages 1`] = `null`;
+
+exports[`snapshot with one message 1`] = `
+<div>
+  <span>
+    notification message
+  </span>
+  <button
+    onClick={[Function]}
+  >
+    dismiss
+  </button>
+</div>
+`;

@@ -1,3 +1,11 @@
-test("adds 1 + 2 to equal 3", () => {
-  expect(1 + 2).toBe(3);
+import { Provider, Inbox, withPublish } from "../src/index";
+
+test("should export Provider", () => {
+  expect(Provider).toBeTruthy();
+});
+test("should export Inbox", () => {
+  expect(Inbox).toBeTruthy();
+});
+test("should export withPublish", () => {
+  expect(withPublish).toBeTruthy();
 });

@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot for empty children 1`] = `null`;
+
+exports[`snapshot for static children 1`] = `
+<button
+  onClick={[Function]}
+>
+  click me
+</button>
+`;
+
+exports[`snapshot for static children with payload 1`] = `
+<div>
+  <span>
+    notification message
+  </span>
+  <button
+    onClick={[Function]}
+  >
+    dismiss
+  </button>
+</div>
+`;
