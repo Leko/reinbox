@@ -46,6 +46,28 @@ const App = () => (
 );
 ```
 
+## API
+
+### <Inbox />
+
+```jsx
+<Inbox topic="test">
+  {({ payload, dismiss }) =>
+    payload && (
+      <div>
+        <span>{payload.message}</span>
+        <button onClick={dismiss}>dismiss</button>
+      </div>
+    )
+  }
+</Inbox>
+```
+
+| prop name | required | description                                                                   |
+| --------- | -------- | ----------------------------------------------------------------------------- |
+| topic     | Yes      | Topic name you want to receive message                                        |
+| childrenn | Yes      | Render notification message.<br />When there is no message, payload is `null` |
+
 ## Development
 
 ```

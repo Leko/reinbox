@@ -193,10 +193,6 @@ dispatch(
 | namespace  | -        | please refer [Custom namespace](#custom-namespace) | `"reinbox"` |
 | dispatcher | -        | please refer [Dismiss in Inbox](#dismiss-in-Inbox) |             |
 
-### <Inbox />
-
-Please refer [usage of reinbox](https://github.com/Leko/reinbox/tree/master/packages/reinbox#usage) and [Dismiss in Inbox](#dismiss-in-Inbox).
-
 ## Development
 
 ```
