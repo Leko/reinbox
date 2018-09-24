@@ -1,6 +1,6 @@
 {
   "name": "reinbox-redux",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "reinbox with Redux",
   "keywords": [
     "redux",
@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "power-assign": "^0.2.9",
-    "reinbox": "^0.1.0"
+    "reinbox": "^0.1.1"
   },
   "devDependencies": {
     "@types/react": "^16.4.14",
