@@ -23,6 +23,7 @@
     "url": "git+ssh://git@github.com/Leko/reinbox.git"
   },
   "scripts": {
+    "prepublishOnly": "upbin can-npm-publish",
     "prepare": "upbin npm-run-all prepare:clean prepare:babel prepare:types",
     "prepare:clean": "upbin rimraf dist",
     "prepare:babel": "upbin babel --config-file ../../.babelrc src --extensions '.ts,.tsx' --out-dir dist",

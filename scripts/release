@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 set -eux
 
-$(npm bin)/lerna exec can-npm-publish -- --verbose
-
 mkdir -p .release_note
 $(npm bin)/lerna bootstrap
 
