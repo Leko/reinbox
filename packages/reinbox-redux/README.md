@@ -94,32 +94,6 @@ const App = () => (
     <ReinboxProvider>
       <Controls />
       <Inbox topic={TOPIC}>
-        {({ payload }) =>
-          payload && (
-            <div>
-              <span>{payload.message}</span>
-            </div>
-          )
-        }
-      </Inbox>
-    </ReinboxProvider>
-  </Provider>
-);
-```
-
-#### Dismiss in Inbox
-
-If you want to use `dismiss` in Inbox, please set `dispatcher` prop to Provider.
-
-```jsx
-import { Provider } from "react-redux";
-import { Provider as ReinboxProvider } from "reinbox-redux";
-import { Inbox } from "reinbox";
-
-const App = () => (
-  <Provider store={store}>
-    <ReinboxProvider dispatcher={store.dispatch}>
-      <Inbox topic={TOPIC}>
         {({ payload, dismiss }) =>
           payload && (
             <div>
@@ -167,16 +141,13 @@ dispatch(actions.dismiss("test", "xxx"));
 ### <Provider />
 
 ```jsx
-<Provider namespace="someGreatReducer" dispatcher={store.dispatch}>
-  ...
-</Provider>
+<Provider namespace="someGreatReducer">...</Provider>
 ```
 
-| prop name  | required | description                                        | default     |
-| ---------- | -------- | -------------------------------------------------- | ----------- |
-| children   | Yes      | any react components                               |             |
-| namespace  | -        | please refer [Custom namespace](#custom-namespace) | `"reinbox"` |
-| dispatcher | -        | please refer [Dismiss in Inbox](#dismiss-in-Inbox) |             |
+| prop name | required | description                                        | default     |
+| --------- | -------- | -------------------------------------------------- | ----------- |
+| children  | Yes      | any react components                               |             |
+| namespace | -        | please refer [Custom namespace](#custom-namespace) | `"reinbox"` |
 
 ## Development
 
