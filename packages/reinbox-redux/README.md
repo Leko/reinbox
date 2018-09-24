@@ -78,20 +78,10 @@ const Control = ({ onPublish, onDismiss }) => (
 const mapStateToProps = () => ({});
 const mapDispatchToProps = () => ({
   onPublish() {
-    dispatch(
-      actions.publish({
-        topic: TOPIC,
-        payload: { id: "xxx", message: "notify me" }
-      })
-    );
+    dispatch(actions.publish(TOPIC, { id: "xxx", message: "notify me" }));
   },
   onDismiss() {
-    dispatch(
-      actions.dismiss({
-        topic: TOPIC,
-        id: "xxx"
-      })
-    );
+    dispatch(actions.dismiss(TOPIC, "xxx"));
   }
 });
 const Controls = connect(
@@ -155,34 +145,24 @@ const reducer = createReducer();
 ### actions.publish
 
 ```js
-dispatch(
-  actions.publish({
-    topic: "test",
-    payload: { id: "xxx", message: "notify me" }
-  })
-);
+dispatch(actions.publish("test", { id: "xxx", message: "notify me" }));
 ```
 
-| prop name | required | description                                         |
-| --------- | -------- | --------------------------------------------------- |
-| topic     | Yes      | Topic name you want to publish                      |
-| payload   | Yes      | Notification message. It should contains `id` field |
+| argument | required | description                                         |
+| -------- | -------- | --------------------------------------------------- |
+| topic    | Yes      | Topic name you want to publish                      |
+| payload  | Yes      | Notification message. It should contains `id` field |
 
 ### actions.dismiss
 
 ```js
-dispatch(
-  actions.dismiss({
-    topic: "test",
-    id: "xxx"
-  })
-);
+dispatch(actions.dismiss("test", "xxx"));
 ```
 
-| prop name | required | description                    |
-| --------- | -------- | ------------------------------ |
-| topic     | Yes      | Topic name you want to dismiss |
-| id        | Yes      | message id                     |
+| argument | required | description                    |
+| -------- | -------- | ------------------------------ |
+| topic    | Yes      | Topic name you want to dismiss |
+| id       | Yes      | message id                     |
 
 ### <Provider />
 
