@@ -5,7 +5,7 @@
 [![CircleCI](https://circleci.com/gh/Leko/reinbox.svg?style=svg)](https://circleci.com/gh/Leko/reinbox)
 [![codecov](https://codecov.io/gh/Leko/reinbox/branch/master/graph/badge.svg)](https://codecov.io/gh/Leko/reinbox)
 
-Use [reinbox](https://github.com/Leko/reinbox/tree/master/packages/reinbox) with Redux.
+Use [reinbox](https://github.com/Leko/reinbox/tree/master/packages/reinbox) with Redux.  
 If you are not using Redux, you can use [reinbox](https://github.com/Leko/reinbox/tree/master/packages/reinbox) only.
 
 ## Install
@@ -18,7 +18,7 @@ npm install reinbox reinbox-redux
 
 ### Configure store
 
-reinbox-redux provides `createReducer` and `Provider`.
+reinbox-redux provides `createReducer` and `Provider`.  
 Please use `combineReducers` to combineReducers with key: `reinbox`.
 
 ```jsx
