@@ -1,15 +1,15 @@
 {
-  "name": "reinbox",
+  "name": "reinbox-redux",
   "version": "0.0.0",
-  "description": "Declarative topic based notification UI manager for React (Native)",
+  "description": "reinbox with Redux",
   "keywords": [
+    "redux",
     "react",
-    "notification",
-    "ui",
-    "declarative"
+    "reinbox",
+    "notification"
   ],
   "author": "Leko <leko.noor@gmail.com>",
-  "homepage": "https://github.com/Leko/reinbox/tree/master/packages/reinbox",
+  "homepage": "https://github.com/Leko/reinbox/tree/master/packages/reinbox-redux",
   "license": "MIT",
   "main": "./dist/index.js",
   "directories": {
@@ -33,16 +33,20 @@
     "url": "https://github.com/Leko/reinbox/issues"
   },
   "dependencies": {
+    "reinbox": "*",
     "power-assign": "^0.2.9"
   },
   "devDependencies": {
     "@types/react": "^16.4.14",
+    "@types/react-redux": "^6.0.9",
     "@types/react-test-renderer": "^16.0.2",
     "react": "^16.5.2",
+    "react-redux": "^5.0.7",
     "react-test-renderer": "^16.5.2",
     "upbin": "^0.8.1"
   },
   "peerDependencies": {
-    "react": ">= 16.x"
+    "react-redux": "*",
+    "redux": "*"
   }
 }

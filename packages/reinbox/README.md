@@ -5,7 +5,8 @@
 [![CircleCI](https://circleci.com/gh/Leko/reinbox.svg?style=svg)](https://circleci.com/gh/Leko/reinbox)
 [![codecov](https://codecov.io/gh/Leko/reinbox/branch/master/graph/badge.svg)](https://codecov.io/gh/Leko/reinbox)
 
-Declarative topic based notification UI manager for React (Native)
+Declarative topic based notification UI manager for React (Native).  
+If you want to use reinbox with [Redux](https://github.com/reduxjs/redux), you can use [reinbox-redux](https://github.com/Leko/reinbox/tree/master/packages/reinbox-redux).
 
 ## Install
 
@@ -45,6 +46,28 @@ const App = () => (
   </Provider>
 );
 ```
+
+## API
+
+### `<Inbox />`
+
+```jsx
+<Inbox topic="test">
+  {({ payload, dismiss }) =>
+    payload && (
+      <div>
+        <span>{payload.message}</span>
+        <button onClick={dismiss}>dismiss</button>
+      </div>
+    )
+  }
+</Inbox>
+```
+
+| prop name | required | description                                                                   |
+| --------- | -------- | ----------------------------------------------------------------------------- |
+| topic     | Yes      | Topic name you want to receive message                                        |
+| childrenn | Yes      | Render notification message.<br />When there is no message, payload is `null` |
 
 ## Development
 

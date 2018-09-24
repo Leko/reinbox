@@ -6,3 +6,8 @@
 [![codecov](https://codecov.io/gh/Leko/reinbox/branch/master/graph/badge.svg)](https://codecov.io/gh/Leko/reinbox)
 
 Declarative topic based notification UI manager for React
+
+## Packages
+
+- [reinbox](./packages/reinbox): Pure React approach
+- [reinbox-redux](./packages/reinbox-redux): Use reinbox with Redux
