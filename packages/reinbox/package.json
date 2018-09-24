@@ -23,7 +23,7 @@
     "url": "git+ssh://git@github.com/Leko/reinbox.git"
   },
   "scripts": {
-    "prepare": "../../node_modules/.bin/babel src --extensions '.ts,.tsx' --out-dir dist",
+    "prepare": "upbin babel --config-file ../../.babelrc src --extensions '.ts,.tsx' --out-dir dist",
     "test": "tsc && jest"
   },
   "bugs": {
@@ -41,7 +41,8 @@
     "react-test-renderer": "^16.5.2",
     "ts-jest": "^23.10.1",
     "ts-node": "^7.0.1",
-    "typescript": "^3.0.3"
+    "typescript": "^3.0.3",
+    "upbin": "^0.8.1"
   },
   "peerDependencies": {
     "react": ">= 16.x"
