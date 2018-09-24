@@ -23,8 +23,11 @@
     "url": "git+ssh://git@github.com/Leko/reinbox.git"
   },
   "scripts": {
-    "prepare": "upbin babel --config-file ../../.babelrc src --extensions '.ts,.tsx' --out-dir dist",
-    "test": "tsc && jest"
+    "prepare": "upbin npm-run-all prepare:clean prepare:babel prepare:types",
+    "prepare:clean": "upbin rimraf dist",
+    "prepare:babel": "upbin babel --config-file ../../.babelrc src --extensions '.ts,.tsx' --out-dir dist",
+    "prepare:types": "tsc --declarationDir ./dist && mv ./dist/src/* ./dist/ && rm -rf ./dist/{src,__tests__}",
+    "test": "npm run prepare && jest"
   },
   "bugs": {
     "url": "https://github.com/Leko/reinbox/issues"

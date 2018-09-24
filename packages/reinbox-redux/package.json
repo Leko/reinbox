@@ -23,15 +23,18 @@
     "url": "git+ssh://git@github.com/Leko/reinbox.git"
   },
   "scripts": {
-    "prepare": "../../node_modules/.bin/babel src --extensions '.ts,.tsx' --out-dir dist",
-    "test": "tsc && jest"
+    "prepare": "upbin npm-run-all prepare:clean prepare:babel prepare:types",
+    "prepare:clean": "upbin rimraf dist",
+    "prepare:babel": "upbin babel --config-file ../../.babelrc src --extensions '.ts,.tsx' --out-dir dist",
+    "prepare:types": "tsc --declarationDir ./dist && mv ./dist/src/* ./dist/ && rm -rf ./dist/{src,__tests__}",
+    "test": "npm run prepare && jest"
   },
   "bugs": {
     "url": "https://github.com/Leko/reinbox/issues"
   },
-  "peerDependencies": {
-    "react-redux": "*",
-    "redux": "*"
+  "dependencies": {
+    "reinbox": "*",
+    "power-assign": "^0.2.9"
   },
   "devDependencies": {
     "@types/jest": "^23.3.2",
@@ -42,6 +45,11 @@
     "react-test-renderer": "^16.5.2",
     "ts-jest": "^23.10.1",
     "ts-node": "^7.0.1",
-    "typescript": "^3.0.3"
+    "typescript": "^3.0.3",
+    "upbin": "^0.8.1"
+  },
+  "peerDependencies": {
+    "react-redux": "*",
+    "redux": "*"
   }
 }
