@@ -1,6 +1,6 @@
 {
   "name": "reinbox-redux",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "reinbox with Redux",
   "keywords": [
     "redux",
@@ -33,8 +33,8 @@
     "url": "https://github.com/Leko/reinbox/issues"
   },
   "dependencies": {
-    "reinbox": "*",
-    "power-assign": "^0.2.9"
+    "power-assign": "^0.2.9",
+    "reinbox": "^0.0.1"
   },
   "devDependencies": {
     "@types/react": "^16.4.14",
