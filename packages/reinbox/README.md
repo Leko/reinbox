@@ -49,7 +49,7 @@ const App = () => (
 
 ## API
 
-### <Inbox />
+### `<Inbox />`
 
 ```jsx
 <Inbox topic="test">

@@ -139,7 +139,7 @@ dispatch(actions.dismiss("test", "xxx"));
 | topic    | Yes      | Topic name you want to dismiss |
 | id       | Yes      | message id                     |
 
-### <Provider />
+### `<Provider />`
 
 ```jsx
 <Provider namespace="someGreatReducer">...</Provider>
