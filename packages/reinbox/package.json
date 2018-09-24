@@ -1,6 +1,6 @@
 {
   "name": "reinbox",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Declarative topic based notification UI manager for React (Native)",
   "keywords": [
     "react",
