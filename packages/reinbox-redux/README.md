@@ -112,7 +112,7 @@ const App = () => (
 );
 ```
 
-### dismiss in Inbox
+#### Dismiss in Inbox
 
 If you want to use `dismiss` in Inbox, please set `dispatcher` prop to Provider.
 
@@ -143,13 +143,59 @@ const App = () => (
 
 ### createReducer
 
+```js
+const reducer = createReducer();
+```
+
 ### actions.publish
+
+```js
+dispatch(
+  actions.publish({
+    topic: "test",
+    payload: { id: "xxx", message: "notify me" }
+  })
+);
+```
+
+| prop name | required | description                                         |
+| --------- | -------- | --------------------------------------------------- |
+| topic     | Yes      | Topic name you want to publish                      |
+| payload   | Yes      | Notification message. It should contains `id` field |
 
 ### actions.dismiss
 
+```js
+dispatch(
+  actions.dismiss({
+    topic: "test",
+    id: "xxx"
+  })
+);
+```
+
+| prop name | required | description                    |
+| --------- | -------- | ------------------------------ |
+| topic     | Yes      | Topic name you want to dismiss |
+| id        | Yes      | message id                     |
+
 ### <Provider />
 
+```jsx
+<Provider namespace="someGreatReducer" dispatcher={store.dispatch}>
+  ...
+</Provider>
+```
+
+| prop name  | required | description                                        | default     |
+| ---------- | -------- | -------------------------------------------------- | ----------- |
+| children   | Yes      | any react components                               |             |
+| namespace  | -        | please refer [Custom namespace](#custom-namespace) | `"reinbox"` |
+| dispatcher | -        | please refer [Dismiss in Inbox](#dismiss-in-Inbox) |             |
+
 ### <Inbox />
+
+Please refer [usage of reinbox](https://github.com/Leko/reinbox/tree/master/packages/reinbox#usage) and [Dismiss in Inbox](#dismiss-in-Inbox).
 
 ## Development
 
