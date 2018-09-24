@@ -8,6 +8,7 @@ module.exports = {
   collectCoverage: true,
   coverageDirectory: "coverage",
   coverageReporters: ["text", "lcov"],
+  testPathIgnorePatterns: ["/node_modules/", "/dist/"],
   errorOnDeprecated: true,
   moduleFileExtensions: ["ts", "tsx", "js"],
   testEnvironment: "node"
