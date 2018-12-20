@@ -44,6 +44,6 @@
     "upbin": "^0.8.1"
   },
   "peerDependencies": {
-    "react": ">= 16.x"
+    "react": ">=16.7.0"
   }
 }
