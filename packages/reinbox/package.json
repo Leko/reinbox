@@ -41,7 +41,7 @@
     "@types/react-test-renderer": "^16.0.2",
     "react": "^16.5.2",
     "react-test-renderer": "^16.5.2",
-    "upbin": "^0.8.1"
+    "upbin": "^0.9.0"
   },
   "peerDependencies": {
     "react": ">= 16.x"
