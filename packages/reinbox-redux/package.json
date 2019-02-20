@@ -47,7 +47,7 @@
     "upbin": "^0.9.0"
   },
   "peerDependencies": {
-    "react-redux": ">=6.0.0",
+    "react-redux": ">=6.0.1",
     "redux": "*"
   }
 }
