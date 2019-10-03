@@ -43,7 +43,7 @@
     "@types/react-test-renderer": "^16.0.2",
     "react": "^16.10.2",
     "react-redux": "^6.0.0",
-    "react-test-renderer": "^16.5.2",
+    "react-test-renderer": "^16.10.2",
     "upbin": "^0.9.0"
   },
   "peerDependencies": {
